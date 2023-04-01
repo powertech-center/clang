@@ -5,10 +5,10 @@
 
 ### Install
 Now you can freely download the **Beta** version of the compiler, unzip the archive corresponding to your operating system and use it. If you want to add your folder to the `PATH` environment variable or create the necessary symlinks, you can easily find the necessary information on the Internet.
-* Windows x64: [powerclang-windows-x64.7z](https://github.com/powertech-center/clang/raw/beta/data/beta/powerclang-windows-x64.7z)
-* Linux x64: [powerclang-linux-x64.7z](https://github.com/powertech-center/clang/raw/beta/data/beta/powerclang-linux-x64.7z)
-* macOS ARM64: [powerclang-macos-arm64.7z](https://github.com/powertech-center/clang/raw/beta/data/beta/powerclang-macos-arm64.7z)
-* macOS x64: [powerclang-macos-x64.7z](https://github.com/powertech-center/clang/raw/beta/data/beta/powerclang-macos-x64.7z)
+* Windows x64: [powerclang-windows-x64.7z](https://powertech.center/data/clang/beta/powerclang-windows-x64.7z)
+* Linux x64: [powerclang-linux-x64.7z](https://powertech.center/data/clang/beta/powerclang-linux-x64.7z)
+* macOS ARM64: [powerclang-macos-arm64.7z](https://powertech.center/data/clang/beta/powerclang-macos-arm64.7z)
+* macOS x64: [powerclang-macos-x64.7z](https://powertech.center/data/clang/beta/powerclang-macos-x64.7z)
 
 ### Features
 * [[C] Language Extentions](/doc/language-extentions.md)
