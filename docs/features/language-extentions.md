@@ -3,8 +3,8 @@
 
 *Please note that the compiler is under active development, we will update this article as new functionality becomes available. We will be glad for your participation in the development, testing and voicing of proposals. Feel free in [Issues](https://github.com/powertech-center/clang/issues), [Discussions](https://github.com/powertech-center/clang/discussions) or in the telegram group [PowerTech C/C++ Beta](https://t.me/powercpp_beta).*
 
-### \_\_POWERTECH\_\_ define
-Our compiler fork always contains the built-in `__POWERTECH__` define. Therefore, you can always develop code both for other compilers and taking into account the specifics of our fork.
+### \_\_POWERTECH\_\_ definition
+Our compiler fork always contains the built-in `__POWERTECH__` definition. Therefore, you can always develop code both for other compilers and taking into account the specifics of our fork.
 ```cpp
 #include <stdio.h>
 int main() {
@@ -25,22 +25,23 @@ int main() {
 # Output:
 Hello World from clang compiler (PowerTech edition)!
 ```
-
-### smallptr attribute
+### [[smallptr]] attribute
 In many algorithms that use a large number of pointers, a large amount of memory can be consumed on 64-bit processors, since a normal pointer is 8 bytes. If you can guarantee that the pointer value fits in the first 4 gigabytes of the address space, you can use 32-bit pointers with the `smallptr` attribute. This attribute is equivalent to the `__ptr32 __uptr` pair in the Microsoft compiler.
 ```cpp
 #include <stdio.h>
 int main() {
     char* foo = 0;
-    char* __attribute__((smallptr)) bar = 0;
-    printf("sizeof(foo) = %d, sizeof(bar) = %d\n", sizeof(foo), sizeof(bar));
+    char* __attribute__((smallptr)) bar = 0; // C style
+    char* [[smallptr]] baz = 0; // C++ style
+    printf("sizeof(foo) = %d, sizeof(bar) = %d, sizeof(baz) = %d\n",
+        sizeof(foo), sizeof(bar), sizeof(baz));
     return 0;
 }
 ```
 
 ```console
 # Output:
-sizeof(foo) = 8, sizeof(bar) = 4
+sizeof(foo) = 8, sizeof(bar) = 4, sizeof(baz) = 4
 ```
 
 ### Fast atomic 128-bit operations
