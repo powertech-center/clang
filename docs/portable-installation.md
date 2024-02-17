@@ -13,7 +13,7 @@ which curl && which 7z
 When both utilities are installed, you can, for example, use these scripts:
 ```bash
 # variables
-url=https://clang-archive-url.7z
+url=https://your-clang-archive-url.7z
 path=/opt/powerclang
 # cleanup directory
 sudo rm -rf $path

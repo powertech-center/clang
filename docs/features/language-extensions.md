@@ -1,4 +1,4 @@
-# [C] Language Extentions
+# [C] Language Extensions
 >Get the most out of your code with properties, thread variables, string switches, interprocedural optimizations, and other language extensions.
 
 *Please note that the compiler is under active development, we will update this article as new functionality becomes available. We will be glad for your participation in the development, testing and voicing of proposals. Feel free in [Issues](https://github.com/powertech-center/clang/issues), [Discussions](https://github.com/powertech-center/clang/discussions) or in the telegram group [PowerTech C/C++ Beta](https://t.me/powercpp_beta).*
